@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support Our Mission - Young Muslim Leadership Program</title>
+    <meta
+        name="description"
+        content="Help us empower the next generation of Muslim leaders. Your donation makes a direct impact on young lives in our community."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="yml_styles.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="yml_index.html">
+                        <div>
+                            <h1 class="brand-title">YML</h1>
+                            <p class="brand-subtitle">Northwest Arkansas</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-menu desktop-nav">
+                    <div class="nav-links">
+                        <a href="yml_index.html" class="nav-link">Home</a>
+                        <a href="yml_about.html" class="nav-link">About</a>
+                        <a href="yml_updates.html" class="nav-link">Updates</a>
+                        <a href="yml_media.html" class="nav-link">Media</a>
+                        <a href="yml_registration.html" class="nav-link">Registration</a>
+                        <a href="yml_donation.html" class="btn btn-secondary">Donate</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn">
+                    <button id="mobile-menu-toggle" class="menu-toggle">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="yml_index.html" class="mobile-nav-link">Home</a>
+                <a href="yml_about.html" class="mobile-nav-link">About</a>
+                <a href="yml_updates.html" class="mobile-nav-link">Updates</a>
+                <a href="yml_media.html" class="mobile-nav-link">Media</a>
+                <a href="yml_registration.html" class="mobile-nav-link">Registration</a>
+                <a href="yml_donation.html" class="mobile-nav-link active">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Support Our Mission</h2>
+                    <p class="section-description">
+                        Help us empower the next generation of Muslim leaders. Your donation makes a direct impact on young lives in our community.
+                    </p>
+                </div>
+
+                <div class="donation-container">
+                    <div class="donation-grid">
+                        <!-- Impact Section -->
+                        <div class="impact-section">
+                            <h3 class="impact-title">Your Impact</h3>
+                            <div class="impact-items">
+                                <div class="impact-item">
+                                    <div class="impact-amount">$25</div>
+                                    <div class="impact-content">
+                                        <h4>Sponsor Materials</h4>
+                                        <p>Provides workshop materials for one child</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="impact-item">
+                                    <div class="impact-amount">$75</div>
+                                    <div class="impact-content">
+                                        <h4>Support a Session</h4>
+                                        <p>Covers the cost of one workshop session</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="impact-item">
+                                    <div class="impact-amount">$150</div>
+                                    <div class="impact-content">
+                                        <h4>Full Scholarship</h4>
+                                        <p>Sponsors one child's full program participation</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guarantee-box">
+                                <h4>100% of Your Donation</h4>
+                                <p>Goes directly to program activities and materials. All administrative costs are covered separately.</p>
+                            </div>
+                        </div>
+
+                        <!-- Donation Form -->
+                        <div class="donation-form-container">
+                            <h3 class="form-title">Make a Donation</h3>
+                            <form class="donation-form">
+                                <!-- Donation Amount -->
+                                <div class="form-group">
+                                    <label>Donation Amount</label>
+                                    <div class="amount-buttons">
+                                        <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                        <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                        <button type="button" class="amount-btn" data-amount="75">$75</button>
+                                        <button type="button" class="amount-btn" data-amount="150">$150</button>
+                                    </div>
+                                    <div class="custom-amount">
+                                        <span class="dollar-sign">$</span>
+                                        <input type="number" id="customAmount" name="amount" placeholder="Other amount" min="1">
+                                    </div>
+                                </div>
+
+                                <!-- Donation Type -->
+                                <div class="form-group">
+                                    <label>Donation Type</label>
+                                    <div class="radio-group">
+                                        <input type="radio" id="one-time" name="donationType" value="one-time" checked>
+                                        <label for="one-time">One-time donation</label>
+                                        
+                                        <input type="radio" id="monthly" name="donationType" value="monthly">
+                                        <label for="monthly">Monthly recurring donation</label>
+                                    </div>
+                                </div>
+
+                                <!-- Donor Information -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="donorFirstName">First Name</label>
+                                        <input type="text" id="donorFirstName" name="donorFirstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="donorLastName">Last Name</label>
+                                        <input type="text" id="donorLastName" name="donorLastName" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="donorEmail">Email Address</label>
+                                    <input type="email" id="donorEmail" name="donorEmail" required>
+                                </div>
+
+                                <!-- Anonymous Option -->
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="anonymous" name="anonymous">
+                                    <label for="anonymous">Make this donation anonymous</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary form-submit">Donate Now</button>
+
+                                <p class="security-note">
+                                    Secure payment processing powered by Stripe. Your information is safe and secure.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Organization Info -->
+                <div class="footer-section footer-main">
+                    <h3 class="footer-title">Young Muslim Leadership Program</h3>
+                    <p class="footer-description">
+                        Empowering Muslim youth aged 8-14 in Northwest Arkansas through Islamic values, 
+                        leadership development, and community engagement. Building tomorrow's leaders today.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎬</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="yml_about.html">About Us</a></li>
+                        <li><a href="yml_updates.html">Updates</a></li>
+                        <li><a href="yml_media.html">Media Gallery</a></li>
+                        <li><a href="yml_registration.html">Registration</a></li>
+                        <li><a href="yml_donation.html">Donate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <p>Northwest Arkansas</p>
+                                <p class="contact-detail">Serving Fayetteville, Bentonville, Rogers, and surrounding areas</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <a href="mailto:info@ymlpnwa.org">info@ymlpnwa.org</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:+14795550123">(479) 555-0123</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2024 Young Muslim Leadership Program - Northwest Arkansas. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="yml_script.js"></script>
+</body>
+</html>
